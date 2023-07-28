@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# group the visitors by IP and HTTP status code, and display this data using awk of
+# the Apache log file of format:
+# IP - - [DATE] "GET /projects/260 HTTP/1.1" STATUS_CODE SIZE
+# The output should be:
+# OCCURENCE_NUMBER IP HTTP_STATUS_CODE
+# ordered by occurence number in descending order
+
+file="apache-access.log"
+awk '{print $1 " " $9}' $file | sort | uniq -c | sort -nr | awk '{print "   " $1 " " $2 " " $3}'
