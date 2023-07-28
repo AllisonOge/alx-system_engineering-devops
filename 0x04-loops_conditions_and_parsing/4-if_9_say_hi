@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# loop 10 times and print "Hi" if the number is 9 using while loop
+i=1
+while [ $i -le 10 ]; do echo "Best School";if [ $i -eq 9 ]; then echo "Hi";fi;i=$((i+1));done
