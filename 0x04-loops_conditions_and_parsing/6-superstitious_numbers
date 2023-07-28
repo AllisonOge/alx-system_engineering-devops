@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# loop 20 times using while loop and display "bad luck from China" for 4th loop, 
+# "bad luck from Japan" for 9th loop, "bad luck from Italy" for 17th loop
+i=1
+while [ $i -le 20 ]; do 
+    if [ $i -eq 4 ]; then
+        echo "bad luck from Japan"
+    elif [ $i -eq 9 ]; then
+        echo "bad luck from Italy"
+    elif [ $i -eq 17 ]; then
+        echo "bad luck from China"
+    else
+        echo $i
+    fi
+    i=$((i+1))
+done
