@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # display the time for 12 hours and 59 minutes
 i=0
-while [ $i -lt 12 ]; do
+while [ $i -le 12 ]; do
     printf "Hour: %d\n" $i
     j=1
     while [ $j -lt 60 ]; do
