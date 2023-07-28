@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# display the visitor IP along with the HTTP status code from the Apache log file
+# using awk
+# The log file is in this format:
+# IP - - [DATE] "GET /projects/260 HTTP/1.1" STATUS_CODE SIZE
+# The output should be:
+# The IP is STATUS_CODE
+
+file="apache-access.log"
+awk '{print $1 " " $9}' $file
