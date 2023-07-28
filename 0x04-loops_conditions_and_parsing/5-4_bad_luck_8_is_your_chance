@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# loop 10 times and display bad luck if 4th iteration
+# display good luck if 8th iteration and display "Best School" for all other cases
+for i in {1..10}; do
+    if [ $i -eq 4 ]; then
+        echo "bad luck"
+    elif [ $i -eq 8 ]; then
+        echo "good luck"
+    else
+        echo "Best School"
+    fi
+done
