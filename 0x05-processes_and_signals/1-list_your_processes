@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 # displays the list of currently running processes, including those which might not have tty
-ps -ef
+# shows process hierarchy
+ps -auxf
