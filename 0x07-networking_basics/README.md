@@ -10,15 +10,15 @@ multiple option quiz :fire::fire:
 - [x] From the lowest to the highest level.
 - [ ] Randomly.
 > 3. What type of network is a computer in local connected to?
-- [ ] Internet
-- [ ] WAN
-- [ ] LAN
+- [x] Internet
+- [x] WAN
+- [x] LAN
 > 4. What type of network could connect and office in one building to another office in a building a few streets away?
-- [ ] Internet
-- [ ] WAN
+- [x] Internet
+- [x] WAN
 - [ ] LAN
 > 5. What network do you use when you browse `www.google.com` from your smartphone (not connected to the WiFi)?
-- [ ] Internet
+- [x] Internet
 - [ ] WAN
 - [ ] LAN
 > 6. What is a MAC address?
