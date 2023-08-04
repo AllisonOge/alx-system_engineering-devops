@@ -3,11 +3,11 @@ networking basics readme
 multiple option quiz :fire::fire:
 > 1. What is the OSI model? 
 - [ ] Set of specifications that network hardware manufacturers must respect.
-- [ ] A conceptual model that characterizes the communication functions of a telecommunication system without regard to its underlying internal structure and technology.
-- [ ] A model that characterizes the communication functions of a telecommunication system with a strong regard for their underlying internal structure and technology.
+- [x] A conceptual model that characterizes the communication functions of a telecommunication system without regard to its underlying internal structure and technology.
+- [x] A model that characterizes the communication functions of a telecommunication system with a strong regard for its underlying internal structure and technology.
 > 2. How is the OSI model organized?
 - [ ] Alphabetically.
-- [ ] From the lowest to the highest level.
+- [x] From the lowest to the highest level.
 - [ ] Randomly.
 > 3. What type of network is a computer in local connected to?
 - [ ] Internet
@@ -23,12 +23,12 @@ multiple option quiz :fire::fire:
 - [ ] LAN
 > 6. What is a MAC address?
 - [ ] The name of a network interface.
-- [ ] The unique identifier of a network interface.
+- [x] The unique identifier of a network interface.
 - [ ] A network interface.
 > 7. What is an IP address?
-- [ ] is to devices connected to a network what postal address is to houses
-- [ ] The unique identifier of a network interface.
-- [ ] is a number that network devices use to connect to networks.
+- [x] is to devices connected to a network what postal address is to houses
+- [x] The unique identifier of a network interface.
+- [x] is a number that network devices use to connect to networks.
 > 8. Which statment is correct for the TCP box?
 - [ ] It is a protocol that is transferring data in a slow way but surely.
 - [ ] It is a protocol that is transferring data in a fast way and might lose data along in the process.
