@@ -9,6 +9,6 @@ cp ~/hosts.new /etc/hosts
 sed -i 's/127.0.0.1/127.0.0.2/g' ~/hosts.new
 
 # Replace facebook.com IP address
-facebook_ip=$(nslookup facebook.com | grep -oP 'Address: \K[\d.]+')
-sed -i s/$facebook_ip/8.8.8.8/g" ~/hosts.new
+facebook_ip=$(nslookup facebook.com | grep -m1 -oP 'Address: \K[\d.]+')
+sed -i 's/'"$facebook_ip"'/8.8.8.8/g' ~/hosts.new
 cp -f ~/hosts.new /etc/hosts
