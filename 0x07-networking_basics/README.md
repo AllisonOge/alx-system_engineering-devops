@@ -22,13 +22,13 @@ multiple option quiz :fire::fire:
 - [ ] WAN
 - [ ] LAN
 > 6. What is a MAC address?
-- [ ] The name of a network interface.
+- [x] The name of a network interface.
 - [x] The unique identifier of a network interface.
 - [ ] A network interface.
 > 7. What is an IP address?
 - [x] is to devices connected to a network what postal address is to houses
-- [x] The unique identifier of a network interface.
-- [x] is a number that network devices use to connect to networks.
+- [ ] The unique identifier of a network interface.
+- [ ] is a number that network devices use to connect to networks.
 > 8. Which statment is correct for the TCP box?
 - [ ] It is a protocol that is transferring data in a slow way but surely.
 - [ ] It is a protocol that is transferring data in a fast way and might lose data along in the process.
