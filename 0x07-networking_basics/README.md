@@ -29,12 +29,15 @@ multiple option quiz :fire::fire:
 - [x] is to devices connected to a network what postal address is to houses
 - [ ] The unique identifier of a network interface.
 - [ ] is a number that network devices use to connect to networks.
+
+![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/3d92e3c4a470f8ecf4c73db511fcbbadaa002e1c.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20230804%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230804T232613Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=64ace2aaf97e17b9903118012438b82c9e8b17077bce01f3ad7c9e63f93d6aef)
+Answer the following questions using this figure.
 > 8. Which statment is correct for the TCP box?
-- [ ] It is a protocol that is transferring data in a slow way but surely.
+- [x] It is a protocol that is transferring data in a slow way but surely.
 - [ ] It is a protocol that is transferring data in a fast way and might lose data along in the process.
 > 9. Which statement is correct for the UDP box?
-- [ ] It is a protocol that is transferring data in a slow way but surely.
+- [x] It is a protocol that is transferring data in a slow way but surely.
 - [ ] It is a protocol that is transferring data in a fast way and might lose data along in the process.
 > 10. Which statement is correct for the TCP worker?
-- [ ] Have you received boxes x, y, and z?
+- [x] Have you received boxes x, y, and z?
 - [ ] May I increase the rate at which I am sending you boxes?
