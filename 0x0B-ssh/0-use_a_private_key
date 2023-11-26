@@ -1,2 +1,3 @@
 #!/usr/bin/env bash
+# use ssh connect to server IP 52.86.239.20 using a private key with the user ubuntu
 ssh -i ~/.ssh/school ubuntu@52.86.239.20
