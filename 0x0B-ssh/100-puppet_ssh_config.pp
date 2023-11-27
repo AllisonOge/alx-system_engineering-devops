@@ -1,20 +1,16 @@
 # Manifest to custom configure SSH file
-file { '/etc/ssh/sshd_config':
-  ensure => file,
-  owner  => 'root',
-  group  => 'root',
-  mode   => '0644',
-}
+include stdlib
 
-exec { 'Turn off passwd auth':
-  command     => '/usr/bin/sed -i "s/^#*PasswordAuthentication.*/PasswordAuthentication no/" /etc/ssh/sshd_config',
-  refreshonly => true,
-  subscribe   => File['/etc/ssh/sshd_config'],
-}
+  file_line { 'Turn off passwd auth':
+    ensure => present,
+    path   => '/etc/ssh/sshd_config',
+    line   => 'PasswordAuthentication no',
+    match  => '^#?PasswordAuthentication',
+  }
 
-exec { 'Declare identity file':
-  command     => '/usr/bin/echo "IdentityFile ~/.ssh/school" >> /etc/ssh/sshd_config',
-  unless      => '/usr/bin/grep -q "^#*IdentityFile ~/.ssh/school" /etc/ssh/sshd_config',
-  refreshonly => true,
-  subscribe   => File['/etc/ssh/sshd_config'],
-}
+  file_line { 'Declare identity file':
+    ensure => present,
+    path   => '/etc/ssh/sshd_config',
+    line   => 'IdentityFile ~/.ssh/school',
+    match  => '^#?IdentityFile',
+  }
