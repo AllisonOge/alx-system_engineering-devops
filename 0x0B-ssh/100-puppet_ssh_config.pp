@@ -11,6 +11,6 @@ include stdlib
   file_line { 'Declare identity file':
     ensure => present,
     path   => '/etc/ssh/sshd_config',
-    line   => '    IdentityFile ~/.ssh/school',
+    line   => '     IdentityFile ~/.ssh/school',
     match  => '^#?IdentityFile',
   }
