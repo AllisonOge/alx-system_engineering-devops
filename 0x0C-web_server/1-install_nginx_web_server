@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+sudo apt-get install -y nginx && sudo sed -i 's/.*/Hello World!/' /var/www/html/*.html && sudo service nginx restart
