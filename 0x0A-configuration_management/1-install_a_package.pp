@@ -2,7 +2,7 @@
  package {'Werkzeug':
     ensure   => '2.1.1',
     provider => 'pip3',
-    before  => Package['Flask'], # ensure Werkzeug is installed before Flask
+    before   => Package['Flask'], # ensure Werkzeug is installed before Flask
   }
 
   package {'Flask':
