@@ -13,4 +13,4 @@ include stdlib
     path   => '/etc/ssh/sshd_config',
     line   => 'IdentityFile ~/.ssh/school',
     match  => '^\s*#?IdentityFile',
-  }
+ }

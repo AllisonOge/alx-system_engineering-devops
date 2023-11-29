@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# install nginx and set it up to listen on port 80 and its default page should contain the string "Hello World!"
+# redirects to new domain at /redirect_me/ endpoint and custom handles 404
+sudo apt-get update
+sudo apt-get install -y nginx
+
+sudo sed -i '/listen \[::\]:80 default_server;/a \    location \/redirect_me { return 301 https:\/\/www.youtube.com\/; }' /etc/nginx/sites-available/default
+
+echo "Hello World!" | sudo tee /var/www/html/index.html >> /dev/null
+
+sudo sed -i '/location \/redirect_me { return 301 https:\/\/www.youtube.com\/; }/a \    error_page 404 /custom_404.html; \n location = /custom_404.html { \ root /var/www/html/; \n internal; \n }' /etc/nginx/sites-available/default
+
+echo "Ceci n'est pas une page" | sudo tee /var/www/html/custom_404.html >> /dev/null
+
+sudo service nginx restart
