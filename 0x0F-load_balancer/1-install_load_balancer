@@ -12,7 +12,8 @@ frontend haproxy_balancer
     default_backend appservers
 
 backend appservers
-    balance roundrobin
+    mode http
+    balance roundrobini
     server web-01 52.86.239.20:80 check
     server web-02 100.26.241.183:80 check
 EOF
