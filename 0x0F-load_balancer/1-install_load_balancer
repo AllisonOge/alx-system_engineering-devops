@@ -16,8 +16,8 @@ frontend haproxy_balancer
 
 backend appservers
     balance roundrobin
-    server web-01 54.84.162.208:80 check
-    server web-02 54.175.225.209:80 check
+    server 281025-web-01 54.84.162.208:80 check
+    server 281025-web-02 54.175.225.209:80 check
 EOF
 
 # enable HAProxy init script
