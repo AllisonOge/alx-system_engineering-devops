@@ -36,15 +36,15 @@ defaults
 	errorfile 504 /etc/haproxy/errors/504.http
 
 frontend haproxy-http
-    bind *:80
-    mode http
-    default_backend appservers
+	bind *:80
+	mode http
+	default_backend appservers
 
 frontend haproxy-https
-    bind *:443 ssl crt /etc/haproxy/certs/www.theairbnbclone.tech.pem
-    default_backend appservers
+	bind *:443 ssl crt /etc/haproxy/certs/www.theairbnbclone.tech.pem
+	default_backend appservers
 
 backend appservers
-    balance roundrobin
-    server web-01 54.84.162.208:80 check
-    server web-02 54.175.225.209:80 check
+	balance roundrobin
+	server web-01 54.84.162.208:80 check
+	server web-02 54.175.225.209:80 check
