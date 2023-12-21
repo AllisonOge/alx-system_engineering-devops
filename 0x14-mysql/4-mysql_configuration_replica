@@ -29,9 +29,10 @@
 [mysqld]
 # Replication setting
 server-id	= 2
-replay_log	= /var/log/mysql/mysql-relay-bin.log
+log_bin		= /var/log/mysql/mysql-bin.log
+binlog_do_db	= tyrell_corp
 read_only	= 1
-replicate_do_db	= tyrell_corp
+relay-log	= /var/log/mysql/mysql-relay-bin.log
 # Other settings
 pid-file	= /var/run/mysqld/mysqld.pid
 socket		= /var/run/mysqld/mysqld.sock
