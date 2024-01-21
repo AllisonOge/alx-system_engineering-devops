@@ -11,5 +11,5 @@ def number_of_subscribers(subreddit):
         return 0
     headers = { "User-Agent": "alx-advanced-api/v1.0 by ohgay_ak4" }
     response = requests.get("https://www.reddit.com/r/{}/about.json".format(subreddit), headers=headers)
-    data = response.json()
+    data = response.json() if response.status_code == 200 else {}
     return data.get("data", {}).get("subscribers", 0)
