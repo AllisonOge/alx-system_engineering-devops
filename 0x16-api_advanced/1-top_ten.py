@@ -3,16 +3,21 @@
 """
 Task 1: Top Ten
 
-Write a function that queries the Reddit API 
-and prints the titles of the first 10 hot posts listed for a given subreddit.
+Write a function that queries the Reddit API
+and prints the titles of the first 10 hot posts
+listed for a given subreddit.
 
 Prototype: def top_ten(subreddit)
 """
 
 import requests
 
+
 def top_ten(subreddit):
-    """Prints the titles of the first 10 hot posts listed for a given subreddit"""
+    """
+    Prints the titles of the first 10 hot posts
+    listed for a given subreddit
+    """
 
     url = 'https://www.reddit.com/r/{}/hot.json'.format(subreddit)
     headers = {
