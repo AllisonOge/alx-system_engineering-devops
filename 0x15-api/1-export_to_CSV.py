@@ -17,8 +17,8 @@ import sys
 
 def main(employeeId):
     """
-    Prints the employee TODO list progress
-    in a certain format (see details above)
+    Exports the employee TODO list progress
+    to a CSV file
     """
     url = "https://jsonplaceholder.typicode.com/users/{}"\
           .format(employeeId)
