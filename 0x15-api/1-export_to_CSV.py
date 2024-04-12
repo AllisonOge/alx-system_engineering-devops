@@ -10,9 +10,9 @@ Requirements:
 - File name must be: USER_ID.csv
 """
 
+import csv
 import requests
 import sys
-import csv
 
 
 def main(employeeId):
