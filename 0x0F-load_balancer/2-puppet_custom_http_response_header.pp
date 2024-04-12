@@ -21,7 +21,7 @@ package {'nginx':
     require => Exec['apt-update'],
 }
 
-file_line {'X-Served-By':
+file_line {'add_header':
     path     => '/etc/nginx/sites-available/default',
     match    => '^server {',
     line     => "server {\n\tadd_header X-Served-By \"${hostname}\";",
