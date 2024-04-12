@@ -10,9 +10,11 @@ Requirements:
 - Format must be: { "USER_ID": [ {"task": "TASK_TITLE",
                                    "completed": TASK_COMPLETED_STATUS,
                                    "username": "USERNAME"}},
-                    { "task": "TASK_TITLE",
-                      "completed": TASK_COMPLETED_STATUS,
-                      "username": "USERNAME"}}, ... ]}
+                                 { "task": "TASK_TITLE",
+                                   "completed": TASK_COMPLETED_STATUS,
+                                   "username": "USERNAME"}},
+                                   ... 
+                                ]}
 - File name must be: USER_ID.json
 """
 
