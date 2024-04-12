@@ -2,7 +2,8 @@
 """
 Task 2: Export to JSON
 
-Expand the `0-get_data_from_an_API.py` script to export the data to a JSON file.
+Expand the `0-get_data_from_an_API.py` script to export
+the data to a JSON file.
 
 Requirements:
 - Records all tasks that are owned by this employee
