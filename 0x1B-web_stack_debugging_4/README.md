@@ -1,6 +1,6 @@
 web stack debugging 4
 
-Challenge: How well is the Nginx web server setup under stress (Turns out it is bad due to failed requests count benchmarked by ApacheBench). Fix the Nginx server so that there are 0 failed request.
+Challenge#0: How well is the Nginx web server setup under stress (Turns out it is bad due to failed requests count benchmarked by ApacheBench). Fix the Nginx server so that there are 0 failed request.
 
 ```
 root@b5e791809f59:~# ab -c 100 -n 2000 localhost/
@@ -93,3 +93,30 @@ Output of /etc/log/nginx/error.log shows the following output, which suggest tha
 Next steps
 - check the current limits on open files with command `ulimit`: `ulimit -n` for current session
 - increase the file descriptor limits
+
+Challenge#1: Help holberton user evade error when logging in or opening a file (see error messages below)
+
+```
+root@552ccbeabaa6:~# su - holberton
+-su: /etc/profile: Too many open files
+-su: /home/holberton/.bash_profile: Too many open files
+-su-4.3$
+-su-4.3$
+-su-4.3$ head /etc/passwd
+-su: start_pipeline: pgrp pipe: Too many open files
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+-su-4.3$
+-su-4.3$ logout
+-su: /home/holberton/.bash_logout: Too many open files
+-su: /etc/bash.bash_logout: Too many open files
+root@552ccbeabaa6:~#
+```
