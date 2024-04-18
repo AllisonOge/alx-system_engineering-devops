@@ -1,7 +1,6 @@
 # increase the file descriptor limit in /etc/default/nginx
 exec {'increase-file-descriptor-limit':
-    command => "sed -i 's/ULIMIT=\"-n 15\"/ULIMIT=\"-n 10000\"/Ig' /etc/default/nginx",
-    onlyif  => "grep -q 'ULIMIT=\"-n 15\"' /etc/default/nginx",
+    command => "sed -i 's/^ULIMIT=.*/ULIMIT=\"-n 10000\"/Ig' /etc/default/nginx",
     path    => '/usr/local/bin/:/bin/',
 }
 
