@@ -30,6 +30,13 @@ server {
                 proxy_redirect off;
         }
 
+        # proxy internal and external request from URI to internal
+        # process running on port 5001
+        location /airbnb-dynamic/number_odd_or_even/ {
+                proxy_pass http://localhost:5001/number_odd_or_even/;
+                proxy_redirect off;
+        }
+
         # SSL configuration
         #
         # listen 443 ssl default_server;
