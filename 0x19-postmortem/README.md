@@ -1,5 +1,6 @@
 # Postmortem: NGINX Server Downtime Due to Faulty Production Update
 
+![DALLE2024-04-1913 42 40-Ahumorousdigitalillustrationrepresentingaserverdowntimescenario Theimagefeaturesanetworkofserverswithonehighlightedinacomicalred-ezgif com-webp-to-jpg-converter](https://github.com/AllisonOge/alx-system_engineering-devops/assets/44110875/3b3dbc59-7bfa-4d00-ad9e-46219942415a)
 
 
 ## Issue Summary
