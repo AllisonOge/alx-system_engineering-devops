@@ -5,7 +5,7 @@ exec {'increase-file-descriptor-limit':
 }
 
 exec { 'restart-nginx':
-    command     => '/usr/bin/service nginx restart',
+    command     => 'service nginx restart',
     refreshonly => true,
     subscribe   => Exec['increase-file-descriptor-limit'],
     path        => '/usr/sbin:/usr/bin:/sbin/bin',
